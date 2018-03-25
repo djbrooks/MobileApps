@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>12 Column Grid Hands-On</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS
+-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- JQuery
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+-->
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+  <style>
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed)
+  .row.content {height: 550px}
+  */
+
+  /* Set gray background color and 100% height
+  background-color: #f1f1f1;
+  */
+  .mysidenav {
+    background-color: #ff9800;
+    height: 100%;
+  }
+
+  /* On small screens, set height to 'auto' for the grid
+  @media screen and (max-width: 767px) {
+  */
+  @media screen {
+    .row.content {height: auto;}
+  }
+
+  /*
+  This makes sure the first typwriter key picture stretches completely
+  to fill the entire card so you won't see a white background if it is
+  streteched further than the original picture size.
+  */
+  .mycardimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* New way of prioritization */
+  #bootstrap-card-text-override { /* 100+1=101 priority score, yay! */
+    font-size: 16px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+  /*
+  * {
+  font-size: 1.08em;
+}
+*/
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse visible-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Collapsable Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Active Collapsable NavBar</a></li>
+          <li><a href="#">Collapsable Nav1</a></li>
+          <li><a href="#">Collapsable Nav2</a></li>
+          <li class="disabled"><a href="#">Disabled Collapsable Nav2</a></li>
+          <li><a href="#">Collapsable Nav3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 mysidenav hidden-xs">
+        <h3>Side NavBar</h3>
+        <nav class="nav flex-column nav-pills ">
+          <a class="nav-link" href="#">Nav 1</a>
+          <a class="nav-link active" href="#">Active Nav 2</a>
+          <a class="nav-link disabled" href="#">Disabled Nav 3</a>
+          <a class="nav-link" href="#">Nav 4</a>
+        </nav>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="well">
+          <h3><a href="https://wozu.exeterlms.com/student/13276/lesson/16473"
+            target="_blank">Lesson_09 Hands-On: 12 Column Grid</a>
+          </h3>
+          <p>
+            Throughout the Responsive Design course, we have been introduced to Responsive
+            Design and how it can be leverage to make our applications function better
+            across multiple platforms. A major key in this capability is the ability to use
+            grid systems. With a grid, we can have our elements organized and displayed
+            proportionally across various devices. In this Hands-On Project, we will be
+            creating our very own grid systems that we can use on future projects.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="well">
+          <h3>
+            Requirements:
+          </h3>
+          <ul>
+            <li> 12 Column Grid </li>
+            <li> A Side Navbar that uses the left-most two columns </li>
+            <li> A header to use the remaining 10 columns. </li>
+            <li>3 separate columns of text, each take up 4 columns in our grid.</li>
+            <li> Two images, each position to take up six columns. </li>
+            <li> A footer to use the full length of 12 columns. </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <h3>
+            Description:
+          </h3>
+          <p>
+            Following the elements you have learned in the previous lessons, create a
+            custom grid using a fluid 12 column grid structure. We will then use that grid
+            to place some items on our page. This will allow us to practice placing items
+            of various sizes on our web page.
+          </p>
+          <p>
+            Tip! When designing your Robot Store, have a theme in mind. This can include
+            everything from a color scheme to the placement of items on the page. For
+            inspiration view your favorite online stores.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="well">
+          <h3> Grading: </h3>
+          <ul>
+            <li> Meets all Requirements: 50% based on meeting requirements. </li>
+            <li> Timely Submission: 25% based on complete solution delivered on time. </li>
+            <li> Style: 25% based on legible and well-designed code. </li>
+          </ul>
+          <p>
+            Be sure to save your solution, and be prepared to share it with your Instructor
+            or Mentor during your next class, or check-in.
+          </p>
+          <p>
+            Tip! Your Instructor or Mentor may test your program with additional inputs,
+            so be sure to test it thoroughly with different scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-lg-6">
+          <div class="well">
+            <!--Card image-->
+            <div class="card">
+              <div class="view overlay">
+                <img class="mycardimg" src="https://images.pexels.com/photos/101710/pexels-photo-101710.jpeg?auto=compress&cs=tinysrgb&h=350" class="img-fluid" alt="Old typewriter keyboard.">
+                <a href="https://goo.gl/ufbZnz" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Manual typewriters are the best.</h4>
+                <!--Text-->
+                <p class="card-text" id="bootstrap-card-text-override">
+                  There is just something about the sight of old typewriter
+                  keys that make you want to flail away so you can hear the
+                  satisfying clack, clack, clack as the type hammers
+                  rhythumically slap against the tightly held paper. The
+                  harder the flail, the louder the smack...
+                </p>
+                <p class="card-text" id="bootstrap-card-text-override">
+                Yes, satisfying...
+              </p>
+                <a href="#" class="btn btn-primary">ENTER</a>
+              </div>
+            </div> <!--/ Card -->
+          </div> <!--/ Well -->
+        </div> <!--/ col-sm-6 col-lg-6 -->
+        <div class="col-sm-6 col-lg-6">
+          <div class="well">
+            <div class="card"> <!--Card image-->
+              <div class="view overlay">
+                <img src="https://images.pexels.com/photos/698324/pexels-photo-698324.jpeg?auto=compress&cs=tinysrgb&h=350" class="img-fluid" alt="Inspirational typing.">
+                <a href="https://goo.gl/aNq13K" target="_blank">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">Good advice.</h4>
+                <!--Text-->
+                <p class="card-text" id="bootstrap-card-text-override">When lost, remembering
+                  this might help find your way...</p>
+                <a href="#" class="btn btn-primary">SHIFT</a>
+              </div>
+            </div>
+            <!--/.Card-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid col-sm-12 text-center">
+      <div class="well">
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
